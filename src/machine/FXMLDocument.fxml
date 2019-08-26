@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="machine.FXMLDocumentController">
+    <children>
+      <Button fx:id="exitButton" layoutX="709.0" layoutY="611.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="75.0" prefWidth="75.0" />
+      <Label layoutX="46.0" layoutY="24.0" text="Maszyna Turinga - Zwiększanie liczby binarnej o 3" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userInputField" layoutX="163.0" layoutY="108.0" prefHeight="25.0" prefWidth="158.0" />
+      <Label layoutX="46.0" layoutY="107.0" text="Podaj liczbę:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="80.0" text="Akceptowany schemat:  #000000">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="loadButton" layoutX="339.0" layoutY="81.0" mnemonicParsing="false" onAction="#handleLoad" prefHeight="52.0" prefWidth="52.0" />
+      <Label fx:id="catchedNumberLength" layoutX="495.0" layoutY="107.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="catchedNumber" layoutX="495.0" layoutY="80.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="startButton" layoutX="354.0" layoutY="153.0" mnemonicParsing="false" onAction="#handleStart" prefHeight="75.0" prefWidth="75.0" />
+      <Button fx:id="manualStartButton" layoutX="445.0" layoutY="249.0" mnemonicParsing="false" onAction="#handleManualStart" prefHeight="50.0" prefWidth="75.0" text="Następna Iteracja" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="autoStartButton" layoutX="279.0" layoutY="249.0" mnemonicParsing="false" onAction="#handleAutoStart" prefHeight="50.0" prefWidth="75.0" text="Autopilot" />
+      <Label fx:id="iterationsLeftLabel" layoutX="525.0" layoutY="261.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="iterationStaticLabel" layoutX="150.0" layoutY="393.0" text="Iteracja:" AnchorPane.rightAnchor="580.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tapeStateStaticLabel" layoutX="113.0" layoutY="447.0" text="Stan taśmy:" AnchorPane.rightAnchor="580.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="machineStateStaticLabel" layoutX="92.0" layoutY="420.0" text="Stan maszyny:" AnchorPane.rightAnchor="580.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="iterationLabel" layoutX="235.0" layoutY="393.0" text="Iteracja:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="machineStateLabel" layoutX="235.0" layoutY="420.0" text="Iteracja:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tapeStateLabel" layoutX="235.0" layoutY="447.0" text="Iteracja:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="moveMachineHeadStaticLabel" layoutX="120.0" layoutY="474.0" text="Ruch głowicy:" AnchorPane.rightAnchor="580.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="moveMachineHeadLabel" layoutX="235.0" layoutY="474.0" text="Iteracja:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="resultLabel" alignment="CENTER" layoutX="197.0" layoutY="528.0" minWidth="50.0" prefHeight="27.0" prefWidth="388.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
